@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/car.css">
     <link rel="stylesheet" type="text/css" href="css/all.css">
     <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -138,146 +138,114 @@
         </div>
     </nav>
     <!--header end-->
-    <!-- 輪播 START-->
-    <div id="demo" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./images/product/twice.jpg" alt="Los Angeles">
-            </div>
-            <div class="carousel-item">
-                <img src="./images/product/twice2.jpg" alt="Chicago">
-            </div>
-            <div class="carousel-item">
-                <img src="./images/product/twice3.jpg" alt="New York">
-            </div>
-        </div>
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-    </div>
-    <hr class="style-two">
-    <!-- 輪播 END-->
-    <!-- 商品區 START-->
-    <section class="container mt-5">
-        <div class="row">
-            <div class="col-12">
-                <h2>產品分類</h2>
-            </div>
-            <div class="col-12">
-                <div class="card-deck mt-2 product-categories">
-                    <a href="shop.html" class="card">
-                        <div class="card-body bg-dark">
-                            <h4 class="card-title text-white text-center">apple</h4>
+    <section class="page-content">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <!-- 產品清單/start -->
+                <div class="col-12 mb-3">
+                    <h2 class="mb-3">購物車</h2>
+                    <div class="table-responsive-sm table-middle">
+                        <table class="table table-bordered table-dark">
+                            <thead>
+                                <tr>
+                                    <th scope="col">&nbsp;</th>
+                                    <th scope="col">圖片</th>
+                                    <th scope="col">名稱</th>
+                                    <th scope="col">價格</th>
+                                    <th scope="col">數量</th>
+                                    <th scope="col">總計</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"> <button id="del" class="btn btn-default" title="刪除" style="background: red;">
+                                            <i class="far fa-trash-alt"></i>
+                                        </button></th>
+                                    <td> <a href="product.html">
+                                            <img src="./images/product/eva_1.jpg" alt="手機" class="img-fluid">
+                                        </a></td>
+                                    <td>手機</td>
+                                    <td>$5000</td>
+                                    <td><input type="number" value="1" style="width: 50px;"></td>
+                                    <td>8000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"> <button id="del" class="btn btn-default" title="刪除" style="background: red;">
+                                            <i class="far fa-trash-alt"></i>
+                                        </button></th>
+                                    <td> <a href="product.html">
+                                            <img src="./images/product/eva_1.jpg" alt="手機" class="img-fluid">
+                                        </a></td>
+                                    <td>手機</td>
+                                    <td>$5000</td>
+                                    <td><input type="number" value="1" style="width: 50px;"></td>
+                                    <td>8000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"> <button id="del" class="btn btn-default" title="刪除" style="background: red;">
+                                            <i class="far fa-trash-alt"></i>
+                                        </button></th>
+                                    <td> <a href="product.html">
+                                            <img src="./images/product/eva_1.jpg" alt="手機" class="img-fluid">
+                                        </a></td>
+                                    <td>手機</td>
+                                    <td>$5000</td>
+                                    <td><input type="number" value="1" style="width: 50px;"></td>
+                                    <td>8000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- 產品清單/end -->
+                <!-- 產品統計/start -->
+                <div class="col-12 col-md-6 ">
+                    <h2>繼續購物</h2>
+                    <div class="row">
+                        <div class="card-deck col-md-12">
+                            <a href="shop.html" class="card">
+                                <div class="card-body bg-dark">
+                                    <h4 class="card-title text-white text-center">apple</h4>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <a href="shop.html" class="card">
-                        <div class="card-body bg-dark">
-                            <h4 class="card-title text-white text-center">apple</h4>
+                        <div class="card-deck col-md-12">
+                            <a href="shop.html" class="card">
+                                <div class="card-body bg-dark">
+                                    <h4 class="card-title text-white text-center">apple</h4>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <a href="shop.html" class="card">
-                        <div class="card-body bg-dark">
-                            <h4 class="card-title text-white text-center">apple</h4>
+                        <div class="card-deck col-md-12">
+                            <a href="shop.html" class="card">
+                                <div class="card-body bg-dark">
+                                    <h4 class="card-title text-white text-center">apple</h4>
+                                </div>
+                            </a>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!--商品區-->
-    <section class="container mt-5">
-        <div class="row">
-            <div class="col-12">
-                <h2>HOT</h2>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="card-body">
-                    <img class="card-img-top" src="./images/product/iphone.jpg" alt="百年珍藏紅酒">
-                    <h4 class="card-title">好貴的手機</h4>
-                    <h5 class="card-text text-dark">NT$&nbsp;500</h5>
-                    <a href="#" class="btn btn-outline-dark btn-block">查看商品</a>
-                    <a href="#" class="btn btn-outline-dark btn-block">加入購物車</a>
+                <div class="col-12 col-md-6">
+                    <h2>購物車總計</h2>
+                    <div class="table-responsive-sm">
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td>總計</td>
+                                    <td>NT$&nbsp;1500</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">
+                                        <a href="checkout.html" class="btn btn-outline-info btn-lg float-right">前往結帳</a>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card-body">
-                    <img class="card-img-top" src="./images/product/iphone.jpg" alt="好貴的手機">
-                    <h4 class="card-title">好貴的手機</h4>
-                    <h5 class="card-text text-dark">NT$&nbsp;500</h5>
-                    <a href="#" class="btn btn-outline-dark btn-block">查看商品</a>
-                    <a href="#" class="btn btn-outline-dark btn-block">加入購物車</a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card-body">
-                    <img class="card-img-top" src="./images/product/iphone.jpg" alt="好貴的手機">
-                    <h4 class="card-title">好貴的手機</h4>
-                    <h5 class="card-text text-dark">NT$&nbsp;500</h5>
-                    <a href="#" class="btn btn-outline-dark btn-block">查看商品</a>
-                    <a href="#" class="btn btn-outline-dark btn-block">加入購物車</a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card-body">
-                    <img class="card-img-top" src="./images/product/iphone.jpg" alt="好貴的手機">
-                    <h4 class="card-title text-danger">好貴的手機</h4>
-                    <h5 class="card-text text-dark">NT$&nbsp;500</h5>
-                    <a href="#" class="btn btn-outline-dark btn-block">查看商品</a>
-                    <a href="#" class="btn btn-outline-dark btn-block">加入購物車</a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card-body">
-                    <img class="card-img-top" src="./images/product/iphone.jpg" alt="好貴的手機">
-                    <h4 class="card-title">好貴的手機</h4>
-                    <h5 class="card-text text-dark">NT$&nbsp;500</h5>
-                    <a href="#" class="btn btn-outline-dark btn-block">查看商品</a>
-                    <a href="#" class="btn btn-outline-dark btn-block">加入購物車</a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card-body">
-                    <img class="card-img-top" src="./images/product/iphone.jpg" alt="好貴的手機">
-                    <h4 class="card-title">好貴的手機</h4>
-                    <h5 class="card-text text-dark">NT$&nbsp;500</h5>
-                    <a href="#" class="btn btn-outline-dark btn-block">查看商品</a>
-                    <a href="#" class="btn btn-outline-dark btn-block">加入購物車</a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card-body">
-                    <img class="card-img-top" src="./images/product/iphone.jpg" alt="好貴的手機">
-                    <h4 class="card-title">好貴的手機</h4>
-                    <h5 class="card-text text-dark">NT$&nbsp;500</h5>
-                    <a href="#" class="btn btn-outline-dark btn-block">查看商品</a>
-                    <a href="#" class="btn btn-outline-dark btn-block">加入購物車</a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card-body">
-                    <img class="card-img-top" src="./images/product/iphone.jpg" alt="好貴的手機">
-                    <h4 class="card-title">好貴的手機</h4>
-                    <h5 class="card-text text-dark">NT$&nbsp;500</h5>
-                    <a href="#" class="btn btn-outline-dark btn-block">查看商品</a>
-                    <a href="#" class="btn btn-outline-dark btn-block">加入購物車</a>
-                </div>
+                <!-- 產品統計/end -->
             </div>
         </div>
     </section>

@@ -1,40 +1,7 @@
-/* 分頁碼 */
-
-
-ul.pagination {
-    display: inline-block;
-    padding: 25px;
-    padding-left: 250px;
-
+body{
+    padding: 0;
+    margin: 0;
 }
-
-
-ul.pagination li {
-    display: inline;
-}
-
-ul.pagination li a {
-    background-color: #fff;
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color .3s;
-    border: 1px solid #ddd;
-    margin: 0 4px;
-}
-
-ul.pagination li a.active {
-    color: white;
-    border: 1px solid #4CAF50;
-}
-
-ul.pagination li a:hover:not(.active) {
-    background-color: #ddd;
-}
-
-/* 分頁碼 */
-
 
 .buycar {
     border: 1px solid black;
@@ -49,10 +16,9 @@ ul.pagination li a:hover:not(.active) {
 section {
     color: #000;
     position: relative;
-    margin-top: -28%;
+    margin-top: -1%;
     width: 84%;
-    margin-left: 18%;
-    margin-right: 8%;
+    margin-left: 9%;
     font-family: 微軟正黑體;
     border-width: 1px;
 }
@@ -65,15 +31,14 @@ img {
     margin-bottom: 30px;
 }
 
-.product-list-img {
-    width: 50px;
-    height: 60px;
-    margin: .2rem;
-    opacity: 1;
-    border: 1px solid #0099d1;
-}
 hr.style-two {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
+
+#demo {
+    position: relative;
+}
+
+
